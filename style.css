@@ -1,0 +1,157 @@
+:root {
+  /* Couleurs */
+  --color-primary: #c8a27c;
+  --color-text: #3e3a36;
+  --color-text-light: #8a817c;
+  --color-bg: #fdfaf6;
+  --color-bg-alt: #f3ede6;
+
+  /* Espacements */
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Typographie */
+  --font-base: system-ui, -apple-system, sans-serif;
+  --line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-base);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  margin: 0;
+  background: var(--color-bg);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+section {
+  padding: var(--space-xl) var(--space-lg);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  display: flex;
+  gap: var(--space-md);
+}
+
+.logo {
+  font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-md);
+  min-height: 40vh;
+  justify-content: center;
+}
+
+.hero p {
+  color: var(--color-text-light);
+  max-width: 40ch;
+}
+
+.cta {
+  background: var(--color-primary);
+  color: white;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 30px;
+}
+
+/* PROJETS (GRID) */
+
+.projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.carte {
+  background: var(--color-bg-alt);
+  padding: var(--space-md);
+  border-radius: 8px;
+  background: white;
+}
+
+.tag {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  margin-right: var(--space-sm);
+}
+
+/* A PROPOS */
+
+.apropos-contenu {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.apropos img {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: var(--space-lg);
+  border-top: 1px solid #ddd;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apropos-contenu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}

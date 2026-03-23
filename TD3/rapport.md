@@ -1,7 +1,3 @@
-C'est noté ! On adapte la template pour qu'elle réponde exactement aux deux questions spécifiques demandées dans les consignes du TD, tout en gardant la structure habituelle de ton rapport MMI.
-
-Voici la version finale et complète :
-
 Rapport — TD3
 Points clés
 1. Le modèle Événement → État → Rendu

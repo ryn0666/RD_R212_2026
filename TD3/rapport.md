@@ -1,5 +1,4 @@
 Rapport — TD3
-Points clés
 1. Le modèle Événement → État → Rendu
 Ce modèle est le moteur de l'interactivité. Un événement déclenche un changement d'état (la logique), ce qui provoque un nouveau rendu (le visuel).
 

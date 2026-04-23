@@ -12,4 +12,4 @@ Pour toute donnée distante, il faut toujours gérer loading, success et error a
 Avec REST Countries, j’ai vu qu’il faut toujours faire un console.log pour comprendre la structure des données d’une API avant de les afficher.
 
 ## Utilisation de l’IA
-L’IA m’a aidé à repérer que j’oubliais d’appeler afficherRecherche(pays) dans le Temps 3.​​​​​​​​​​​​​​​​
+L’IA m’a aidé à repérer certaine chose, comme par exemple le fait que j’avais oublié d’appeler afficherRecherche(pays) dans le Temps 3.​​​​​​​​​​​​​​​​
